@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <title>coder-camps-js</title>
+  <meta charset="utf-8">
+  <base href="/" />
+  <link rel="stylesheet" href="/scripts/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/site.css"/>
+  <style>
+        .angular-google-map-container {
+            height: 200px;
+            width: 500px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body ng-controller="HomeController as controller">
+  <ui-gmap-google-map center='controller.center' zoom='controller.zoom'></ui-gmap-google-map>
+
+  <ui-view></ui-view>
+
+  <script src="/scripts/angular/angular.min.js"></script>
+  <script src="/scripts/lodash/dist/lodash.min.js"></script>
+  <script src="/scripts/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
+  <script src="/scripts/angular-google-maps/dist/angular-google-maps.min.js"></script>
+  <script src="/scripts/ngGeolocation/ngGeolocation.min.js"></script>
+  <script src="/scripts/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/scripts/angular-resource/angular-resource.min.js"></script>
+  <script src="/scripts/angular-animate/angular-animate.min.js"></script>
+  <script src="/scripts/angular-touch/angular-touch.min.js"></script>
+  <script src="/scripts/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/services.js"></script>
+  <script src="/js/controllers.js"></script>
+</body>
+
+</html>
